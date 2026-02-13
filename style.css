@@ -1,0 +1,181 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+}
+
+/* CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ================= NAVIGASI ================= */
+.navigasi {
+  width: 100%;
+  background: linear-gradient(135deg, #2c3e50, #3498db);
+  padding: 20px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navigasi .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.websiteSaya {
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.menu {
+  display: flex;
+  gap: 35px;
+  font-size: 17px;
+  font-weight: 500;
+  color: white;
+}
+
+.menu span {
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+}
+
+.menu span:hover {
+  opacity: 0.8;
+}
+
+/* ================= HEADER ================= */
+.bagian-header {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  gap: 60px;
+  padding: 100px 0;
+}
+
+.teks-header h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.teks-header p {
+  margin-bottom: 25px;
+  color: #555;
+  font-size: 16px;
+}
+
+.teks-header button {
+  padding: 12px 25px;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.teks-header button:hover {
+  background-color: #2980b9;
+}
+
+.gambar-header img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* ================= TENTANG ================= */
+.tentang {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.tentang h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.tentang p {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.grid-tentang {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+.grid-tentang div {
+  border: 1px solid #ddd;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.grid-tentang div:hover {
+  transform: translateY(-5px);
+}
+
+/* ================= PORTOFOLIO ================= */
+.portofolio {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.portofolio h2 {
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.grid-portofolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card b {
+  display: block;
+  padding: 15px 20px 5px;
+  font-size: 18px;
+}
+
+.card p {
+  padding: 0 20px 20px;
+  font-size: 14px;
+  color: #555;
+}

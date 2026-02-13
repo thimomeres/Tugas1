@@ -2,93 +2,84 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tugas Edu</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <!-- MENU ATAS -->
-    <table border="1" width="100%" cellpadding="12">
-      <tr>
-        <td width="70%"><b>My Website</b></td>
-        <td align="right">Header | Biodata | Portofolio</td>
-      </tr>
-    </table>
+    <!-- NAVIGASI -->
+    <div class="navigasi">
+      <div class="container">
+        <div class="websiteSaya">Website Saya</div>
+        <div class="menu">
+          <span>Header</span>
+          <span>Biodata</span>
+          <span>Portofolio</span>
+        </div>
+      </div>
+    </div>
 
-    <!-- SECTION HEADER -->
-    <table border="0" width="100%" cellpadding="10">
-      <tr>
-        <td width="50%" valign="top">
-          <h2>Selamat datang di website saya</h2>
+    <!-- HEADER -->
+    <div class="container">
+      <div class="bagian-header">
+        <div class="teks-header">
+          <h2>Selamat Datang di Website Saya</h2>
           <p>
             Ini adalah header dari website saya dengan 2 kolom, kolom pertama
-            adalah judul dan kolom kedua adalah isi dari website saya.
+            adalah judul dan kolom kedua adalah isi.
           </p>
-          <button>Pelajari lebih lanjut</button>
-        </td>
+          <button>Lihat Selengkapnya</button>
+        </div>
 
-        <td width="50%" align="right" valign="top">
-          <img src="https://picsum.photos/400/250" width="80%" />
-        </td>
-      </tr>
-    </table>
+        <div class="gambar-header">
+          <img src="https://picsum.photos/800/500" />
+        </div>
+      </div>
+    </div>
 
-    <hr />
+    <!-- TENTANG -->
+    <div class="container">
+      <div class="tentang">
+        <h2>Tentang Saya</h2>
+        <p>Perkenalan singkat tentang diri saya</p>
 
-    <!-- ABOUT ME -->
-    <table border="0" width="100%" cellpadding="10">
-      <tr>
-        <td align="center">
-          <h2>About Me</h2>
-          <p>A brief introduction about myself</p>
-        </td>
-      </tr>
-    </table>
+        <div class="grid-tentang">
+          <div>Timo Meres</div>
+          <div>Mahasiswa Unklab</div>
+          <div>Belum bekerja</div>
+          <div>085274947024</div>
+          <div>Basketball</div>
+          <div>Manado, Sulawesi Utara</div>
+        </div>
+      </div>
+    </div>
 
-    <table border="1" width="100%" cellpadding="20" cellspacing="15">
-      <tr align="center">
-        <td>Timo Meres</td>
-        <td>Student of Unklab</td>
-        <td>Belum bekerja</td>
-      </tr>
+    <!-- PORTOFOLIO -->
+    <div class="container">
+      <div class="portofolio">
+        <h2>Portofolio</h2>
 
-      <tr align="center">
-        <td>+628547024</td>
-        <td>Basketball</td>
-        <td>Manado, Sulawesi Utara</td>
-      </tr>
-    </table>
+        <div class="grid-portofolio">
+          <div class="card">
+            <img src="https://picsum.photos/800/500?1" />
+            <b>Proyek 1</b>
+            <p>Deskripsi proyek 1</p>
+          </div>
 
-    <hr />
+          <div class="card">
+            <img src="https://picsum.photos/800/500?2" />
+            <b>Proyek 2</b>
+            <p>Deskripsi proyek 2</p>
+          </div>
 
-    <!-- PORTFOLIO -->
-    <table border="0" width="100%" cellpadding="10">
-      <tr>
-        <td align="center">
-          <h2>Portfolio</h2>
-        </td>
-      </tr>
-    </table>
-
-    <table border="1" width="100%" cellpadding="15" cellspacing="20">
-      <tr align="center">
-        <td width="33%">
-          <img src="https://picsum.photos/350/200?1" width="100%" /><br />
-          <b>Proyek 1</b><br />
-          Deskripsi proyek 1
-        </td>
-
-        <td width="33%">
-          <img src="https://picsum.photos/350/200?2" width="100%" /><br />
-          <b>Proyek 2</b><br />
-          Deskripsi proyek 2
-        </td>
-
-        <td width="33%">
-          <img src="https://picsum.photos/350/200?3" width="100%" /><br />
-          <b>Proyek 3</b><br />
-          Deskripsi proyek 3
-        </td>
-      </tr>
-    </table>
+          <div class="card">
+            <img src="https://picsum.photos/800/500?3" />
+            <b>Proyek 3</b>
+            <p>Deskripsi proyek 3</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
