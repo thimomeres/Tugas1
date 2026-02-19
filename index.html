@@ -4,15 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tugas Edu</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <!-- NAVIGASI -->
     <div class="navigasi">
-      <div class="container">
-        <div class="websiteSaya">Website Saya</div>
-        <div class="menu">
+      <div class="container-fluid px-4 d-flex align-items-center">
+        <div class="websiteSaya me-auto">Website Saya</div>
+
+        <div class="menu d-flex gap-4 fs-5">
           <span>Header</span>
           <span>Biodata</span>
           <span>Portofolio</span>
@@ -20,20 +26,26 @@
       </div>
     </div>
 
+    <br />
+
     <!-- HEADER -->
     <div class="container">
-      <div class="bagian-header">
-        <div class="teks-header">
+      <div class="row align-items-center">
+        <div class="col-md-6">
           <h2>Selamat Datang di Website Saya</h2>
-          <p>
-            Ini adalah header dari website saya dengan 2 kolom, kolom pertama
-            adalah judul dan kolom kedua adalah isi.
-          </p>
-          <button>Lihat Selengkapnya</button>
+          <p>Ini adalah header dari website saya dengan 2 kolom.</p>
+
+          <button
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#aboutModal"
+          >
+            Lihat Selengkapnya
+          </button>
         </div>
 
-        <div class="gambar-header">
-          <img src="https://picsum.photos/800/500" />
+        <div class="col-md-6">
+          <img src="https://picsum.photos/800/500" class="img-fluid rounded" />
         </div>
       </div>
     </div>
@@ -81,5 +93,103 @@
         </div>
       </div>
     </div>
+
+    <!-- HOBBIES -->
+    <div class="container">
+      <div class="portofolio">
+        <h2>My Hobies</h2>
+
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1661872981731-54199736e0e1?q=80&w=2670&auto=format&fit=crop"
+                class="card-img-top"
+                alt="Basketball"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Basketball</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="https://images.unsplash.com/photo-1552422535-c45813c61732?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top"
+                alt="Play Piano"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Play Piano</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1661433025857-e79ad6e8bf15?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top"
+                alt="Play Piano"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Play violin</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="aboutModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Tentang Website Saya</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <p>
+              Website ini dibuat sebagai tugas Eduwork. Berisi informasi
+              biodata, portofolio, dan hobi saya.
+            </p>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

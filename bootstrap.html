@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Demo</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Heading -->
+    <div class="container mt-4">
+      <h1 class="mb-4">Hello, world!</h1>
+
+      <div class="row g-3 text-white text-center">
+        <div
+          class="col-lg-4 col-md-12 p-3"
+          style="background-color: rebeccapurple"
+        >
+          Content 1
+        </div>
+
+        <div class="col-lg-4 col-md-6 p-3" style="background-color: steelblue">
+          Content 2
+        </div>
+
+        <div
+          class="col-lg-4 col-md-6 p-3"
+          style="background-color: yellowgreen"
+        >
+          Content 3
+        </div>
+      </div>
+
+      <!-- Text Examples -->
+      <div class="mt-4">
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <p class="fs-4">Ini paragraf</p>
+
+        <p class="text-primary">Primary</p>
+        <p class="text-warning">Warning Kuning</p>
+        <p class="text-danger">Danger Red</p>
+        <p class="text-success">Success</p>
+
+        <p class="text-center fw-bold mt-3">Login</p>
+      </div>
+    </div>
+
+    <!-- Card Section -->
+    <div class="container mt-5">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="https://picsum.photos/800/500?1"
+              class="card-img-top"
+              alt="Gambar Card 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Photo and Desk</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title.
+              </p>
+              <a href="#" class="btn btn-primary"> Go somewhere </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="https://picsum.photos/800/500?2"
+              class="card-img-top"
+              alt="Gambar Card 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Photo and Desk</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title.
+              </p>
+              <a href="#" class="btn btn-primary"> Go somewhere </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Launch demo modal
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Are you Sure to save
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">Chek ulang sebelum save</div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
